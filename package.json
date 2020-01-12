@@ -1,7 +1,14 @@
 {
 	"name": "vscode-regular-helper",
+	"publisher": "miniGean",
+	"license": "MIT",
 	"displayName": "vscode-regular-helper",
 	"description": "VSCode-Regular-Helper is a VS Code package for Regular.",
+	"icon": "regular.png",
+	"repository": {
+		"type": "git",
+    "url": "https://github.com/miniGean/vscode-regular-helper"
+	},
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.41.0"
@@ -10,14 +17,22 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.reg-ip"
+		"onCommand:regular-helper.search"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [{
-			"command": "extension.reg-ip",
-			"title": "reg:ip地址"
-		}]
+			"command": "regular-helper.search",
+			"title": "regular-helper.search"
+		}],
+		"keybindings": [
+			{
+				"command": "regular-helper.search",
+				"key": "ctrl+cmd+r",
+        "mac": "ctrl+cmd+r",
+        "when": "editorTextFocus"
+			}
+		]
 	},
 	"scripts": {
 		"vscode:prepublish": "yarn run compile",
