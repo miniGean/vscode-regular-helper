@@ -5,13 +5,13 @@ export default  [
     regular: /[\u4e00-\u9fa5]/gm
   },
   {
-    type: '匹配双字节字符',
-    label: '常用字符',
+    label: '匹配双字节字符',
+    type: '常用字符',
     regular: /[^\x00-\xff]/igm
   },
   {
-    type: '匹配行尾和行首空白',
-    label: '常用字符',
+    label: '匹配行尾和行首空白',
+    type: '常用字符',
     regular: /(^\s*)|(\s*$)/
   },
   {

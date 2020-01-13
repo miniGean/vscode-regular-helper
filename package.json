@@ -21,10 +21,13 @@
 	],
 	"main": "./out/extension.js",
 	"contributes": {
-		"commands": [{
-			"command": "regular-helper.search",
-			"title": "regular-helper.search"
-		}],
+		"commands": [
+			{
+				"command": "regular-helper.search",
+				"title": "regular-helper.search",
+				"category": "Regular"
+			}
+		],
 		"keybindings": [
 			{
 				"command": "regular-helper.search",
