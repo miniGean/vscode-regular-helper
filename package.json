@@ -7,9 +7,9 @@
 	"icon": "regular.png",
 	"repository": {
 		"type": "git",
-    "url": "https://github.com/miniGean/vscode-regular-helper"
+		"url": "https://github.com/miniGean/vscode-regular-helper"
 	},
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"engines": {
 		"vscode": "^1.41.0"
 	},
@@ -32,8 +32,8 @@
 			{
 				"command": "regular-helper.search",
 				"key": "ctrl+cmd+r",
-        "mac": "ctrl+cmd+r",
-        "when": "editorTextFocus"
+				"mac": "ctrl+cmd+r",
+				"when": "editorTextFocus"
 			}
 		]
 	},
