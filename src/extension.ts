@@ -1,6 +1,6 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
-import * as vscode from 'vscode';
+import * as vscode from 'vscode'
 import REGULARS from './regulars'
 
 // this method is called when your extension is activated
@@ -9,7 +9,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 	// Use the console to output diagnostic information (console.log) and errors (console.error)
 	// This line of code will only be executed once when your extension is activated
-	console.log('Congratulations, your extension "vscode-regular-helper" is now active!');
+	console.log('Congratulations, your extension "vscode-regular-helper" is now active!')
 
 	// The command has been defined in the package.json file
 	// Now provide the implementation of the command with registerCommand
@@ -53,9 +53,9 @@ export function activate(context: vscode.ExtensionContext) {
 						});
 					});
 					// Display a message box to the user
-					vscode.window.showInformationMessage('正则已插入。');
+					vscode.window.showInformationMessage(`${selectedItem.label}已嵌入到编辑器中。`)
 				} else {
-					vscode.window.showWarningMessage('只有在编辑文本的时候才可以使用。');
+					vscode.window.showWarningMessage('只有在编辑文本的时候才可以使用。')
 				}
 			}
 		})
